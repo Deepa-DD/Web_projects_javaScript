@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Fliper</title>
+</head>
+<style>
+    #div1{
+        height: 20rem;
+        width: 10rem;
+        border: 2px solid black;
+        position: relative;
+        top: 1rem;
+    }
+</style>
+<body>
+    <input type="text" placeholder="Enter the color" id="box">
+    <button onclick="fan()">click me</button>
+    <div id="div1"></div>
+    
+</body>
+<script>
+function fan() {
+    document.getElementById("div1").style.backgroundColor=box.value
+}
+</script> 
+</html>

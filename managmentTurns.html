@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>managmentTurns</title>
+    <link rel="stylesheet" href="managmentTurns.css">
+</head>
+<body>
+    <div id="mainDiv" > Aaj Ghar manage karne ki responsibility in do logo ki hai </div>
+    <div id="name1" ></div>
+    <div id="name2" ></div>
+    <button id="aglaDin" ondblclick="nameChange()" >
+        Agla Din!
+    </button>
+    
+</body>
+<script>
+    names=["Deepa", "Shireen", "srishti", "Priya", "purnima", "anjali", "kaminee", "usha", "teena", "mina", "sukriti", "sujata", "varhsa", "meena"]
+    function nameChange(){
+        names1=names[Math.floor(Math.random()*names.length)]
+        names2=names[Math.floor(Math.random()*names.length)]
+        document.getElementById("name1").innerHTML= names1
+        document.getElementById("name2").innerHTML= names2
+
+    }
+</script>
+</html>

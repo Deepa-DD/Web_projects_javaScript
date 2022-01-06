@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random quotes</title>
+    <link rel="stylesheet" href="quotes.css">
+</head>
+<body>
+	<h1 id ="mainHeading">Random Quotes Presenting by Deepa</h1>
+    <div id="mainDiv">
+		<p  id="inner" class="pera"></p></p>
+		<p id="authorName"></p>
+		<button id="moreButton" onclick="nextQuote()" >MORE ?</button> 
+	 </div>
+</body>
+<script>
+
+
+
+
+var quotes = [
+	{
+		"quote": "Be the change you wish to see.",
+		"author": "Mahatma Gandhi",
+		"link": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+	},
+	{
+		"quote": "Social progress can be measured by the social position of the female sex.",
+		"author": "Karl Marx",
+		"link": "https://en.wikipedia.org/wiki/Karl_Marx"
+	},
+	{
+		"quote": "I like the religion that teaches liberty, equality and fraternity.",
+		"author": "B. R. Ambedkar",
+		"link": "https://en.wikipedia.org/wiki/B._R._Ambedkar"
+	},
+	{
+		"quote": "If you tremble with indignation at every injustice then you are a comrade of mine.",
+		"author": "Ernesto Che Guevara",
+		"link": "https://en.wikipedia.org/wiki/Che_Guevara"
+	},
+	{
+		"quote": "Teaching is a very noble profession that shapes the character, caliber, and future of an individual. If the people remember me as a good teacher, that will be the biggest honour for me.",
+		"author": "Abdul Kalam",
+		"link": "https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
+	}
+    ]
+
+    var Colors = ["red", "pink", "yellow", "green", "white", "darkcyan", "silver", "BlanchedAlmond", "chocolate", "darkorchid"];
+	div1=document.getElementById("mainDiv")
+	inner=document.getElementById("inner");
+	function  nextQuote(){
+		random1 = Math.floor(Math.random()*quotes.length)
+		q=quotes[random1].quote
+		A=quotes[random1].author
+		var C =Colors[Math.floor(Math.random()*Colors.length)]
+		var bodyC =Colors[Math.floor(Math.random()*Colors.length)]
+
+		document.getElementById("inner").innerHTML=q
+		document.getElementById("authorName").innerHTML=A
+		document.getElementById("inner").style.backgroundColor=C
+		document.getElementById("inner").style.backgroundColor=C
+		document.body.style.backgroundColor=bodyC
+
+		// body.style.backgroundColor=bodyC
+		document.getElementById("mainDiv").style.backgroundColor=C
+
+
+	
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+#mainHeading{
+    font-family: 'Rubik Mono One', sans-serif;
+    position: relative;
+    top: 8rem;
+    left: 13rem;
+}
+#mainDiv{
+    position: relative;
+    left: 22rem;
+    top: 10rem;
+    height: 19rem;
+    width: 39rem;
+    background-color: #183a1d; 
+    border: solid black   
+}
+body{
+    background-color: #D97706;
+}
+#moreButton{
+    height: 2.5rem;
+    width: 5.5rem;
+    position: relative;
+    top: -3rem;
+    left: 17.5rem;
+}
+.pera{
+    height: 11.4rem;
+    width: 488px;
+    background-color: goldenrod;
+    position: relative;
+    left: 5rem;
+    font-size: 2rem;
+}
+
+#authorName{
+    position: relative;
+    left: 27rem;
+    font-size: 1.2rem;
+}
